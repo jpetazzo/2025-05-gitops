@@ -1,0 +1,20 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: myapp
+  namespace: flux-system
+spec:
+  chart:
+    spec:
+      chart: charts/myapp
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: GitRepository
+        name: flux-system
+  interval: 1m0s
+  targetNamespace: default
+  values:
+    image:
+      repository: jpetazzo/color
+      tag: latest
