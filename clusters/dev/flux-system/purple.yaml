@@ -5,6 +5,7 @@ metadata:
     app: purple
     le-yaml: c-est-la-vie
   name: purple
+  namespace: flux-system
 spec:
   replicas: 2
   selector:
