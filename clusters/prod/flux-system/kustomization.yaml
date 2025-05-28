@@ -3,6 +3,4 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
-- ../../../apps/dockercoins/flux.yaml
-- ../../../apps/green/flux.yaml
-- ../../../apps/kube-prometheus-stack/flux.yaml
+#- ../apps/gotk-apps.yaml
