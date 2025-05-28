@@ -9,7 +9,7 @@ spec:
   interval: 1m0s
   ref:
     branch: main
-  url: ssh://git@github.com/jpetazzo/2025-05-gitops
+  url: https://github.com/jpetazzo/2025-05-gitops
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
